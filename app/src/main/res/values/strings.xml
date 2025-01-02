@@ -2,4 +2,5 @@
     <string name="app_name">BooksApp</string>
 
     <string name="welcome_text">Welcome to the Books App!</string>
+    <string name="book_content_description">Image of a book on the Welcome Screen</string>
 </resources>
