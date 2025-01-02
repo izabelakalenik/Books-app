@@ -8,7 +8,9 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
+import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.res.stringResource
+import com.example.booksapp.R
 
 @Composable
 fun WelcomeScreen() {
@@ -17,21 +19,14 @@ fun WelcomeScreen() {
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.primary)
     ) {
-        WelcomeMessage()
+        WelcomeText()
     }
 }
 
 @Composable
-fun WelcomeMessage(){
+fun WelcomeText(){
     Text(
-        text = "Welcome to the Books App!",
-        modifier = Modifier.padding(20.dp)
+        text = stringResource(id = R.string.welcome_text),
+        modifier = Modifier.padding(dimensionResource(id = R.dimen.text_padding))
     )
 }
-
-//@Composable
-//fun Image(){
-//    Image(
-//
-//    )
-//}
