@@ -7,6 +7,6 @@
     <dimen name="big_spacer">80dp</dimen>
     <dimen name="small_spacer">20dp</dimen>
 
-    <dimen name="welcome_image_height">530dp</dimen>
-    <dimen name="rounded_corners">230dp</dimen>
+    <dimen name="welcome_image_height">470dp</dimen>
+    <dimen name="rounded_corners">200dp</dimen>
 </resources>

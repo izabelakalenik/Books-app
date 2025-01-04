@@ -50,9 +50,8 @@ fun WelcomeText(){
     Text(
         text = stringResource(id = R.string.welcome_text),
         textAlign = TextAlign.Center,
-        color = MaterialTheme.colorScheme.tertiary,
-        style = MaterialTheme.typography.headlineMedium,
-        modifier = Modifier.padding(dimensionResource(id = R.dimen.text_padding))
+        modifier = Modifier.padding(dimensionResource(id = R.dimen.text_padding)),
+        style = MaterialTheme.typography.headlineMedium
     )
 }
 
