@@ -15,16 +15,18 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
-private val DarkColorScheme = darkColorScheme(
+private val darkColorScheme = darkColorScheme(
 //    primary = BlueGreen,
 //    secondary = LightBrown,
 //    tertiary = LightBlue
 )
 
-private val LightColorScheme = lightColorScheme(
+private val lightColorScheme = lightColorScheme(
     primary = BlueGreen,
     secondary = LightBrown,
     tertiary = LightGrey,
+    onPrimary = White,
+
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -49,8 +51,8 @@ fun BooksAppTheme(
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
         }
 
-        darkTheme -> DarkColorScheme
-        else -> LightColorScheme
+        darkTheme -> darkColorScheme
+        else -> lightColorScheme
     }
     val view = LocalView.current
     if (!view.isInEditMode) {

@@ -6,6 +6,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import com.example.booksapp.R
 
@@ -28,8 +29,19 @@ val Typography = Typography(
         fontFamily = dmSerifText,
         fontWeight = FontWeight.SemiBold,
         fontSize = 28.sp,
+        textAlign = TextAlign.Center,
         lineHeight = 36.sp,
         letterSpacing = 0.0.sp,
         color = LightGrey
+    ),
+
+    titleSmall = TextStyle(
+        fontFamily = dmSerifText,
+        fontWeight = FontWeight.Medium,
+        fontSize = 20.sp,
+        lineHeight = 25.sp,
+        letterSpacing = 0.1.sp,
+        color = LightGrey
     )
+
 )
