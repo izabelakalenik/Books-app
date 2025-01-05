@@ -23,11 +23,13 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.navigation.NavHostController
 import com.example.booksapp.R
+import com.example.booksapp.navigation.Routes
 
 
 @Composable
-fun WelcomeScreen() {
+fun WelcomeScreen(navController: NavHostController) {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -41,7 +43,7 @@ fun WelcomeScreen() {
             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.big_spacer)))
             WelcomeText()
             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.medium_spacer)))
-            StartButton()
+            StartButton(navController)
         }
 
         Box(
@@ -65,10 +67,11 @@ fun WelcomeText() {
     )
 }
 
+
 @Composable
-fun StartButton() {
+fun StartButton(navController: NavHostController) {
     ElevatedButton(
-        onClick = { /*TODO*/ },
+        onClick = { navController.navigate(Routes.SEARCH_SCREEN.name) },
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.4f),
         ),
