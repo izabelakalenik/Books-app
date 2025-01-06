@@ -4,4 +4,6 @@
     <string name="welcome_text">Welcome to Books App!</string>
     <string name="start_text">Start searching</string>
     <string name="book_content_description">Image of a book on the Welcome Screen</string>
+
+    <string name="search_text">Search your books</string>
 </resources>

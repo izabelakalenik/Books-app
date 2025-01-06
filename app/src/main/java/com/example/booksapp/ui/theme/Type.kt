@@ -22,7 +22,8 @@ val Typography = Typography(
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         lineHeight = 24.sp,
-        letterSpacing = 0.5.sp
+        letterSpacing = 0.5.sp,
+        color = DarkGrey
     ),
 
     headlineMedium = TextStyle(
@@ -33,6 +34,16 @@ val Typography = Typography(
         lineHeight = 36.sp,
         letterSpacing = 0.0.sp,
         color = LightGrey
+    ),
+
+    headlineSmall = TextStyle(
+        fontFamily = dmSerifText,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 26.sp,
+        textAlign = TextAlign.Center,
+        lineHeight = 36.sp,
+        letterSpacing = 0.0.sp,
+        color = DarkGrey
     ),
 
     titleSmall = TextStyle(
