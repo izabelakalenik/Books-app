@@ -1,4 +1,4 @@
-# BooksApp
+# BooksApp - in progress
 
 ## Overview
 Mobile application that allow users to search for books and information about them, e.g.
