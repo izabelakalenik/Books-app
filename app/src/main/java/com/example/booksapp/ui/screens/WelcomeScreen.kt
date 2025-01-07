@@ -33,7 +33,7 @@ fun WelcomeScreen(navController: NavHostController) {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(MaterialTheme.colorScheme.primary)
+            .background(MaterialTheme.colorScheme.background)
     ) {
         Column(
             modifier = Modifier
@@ -73,7 +73,7 @@ fun StartButton(navController: NavHostController) {
     ElevatedButton(
         onClick = { navController.navigate(Routes.SEARCH_SCREEN.name) },
         colors = ButtonDefaults.buttonColors(
-            containerColor = MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.4f),
+            containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.4f),
         ),
     ) {
         Text(

@@ -27,7 +27,7 @@ fun AppNavigation() {
                 SearchScreen(navController)
             }
 
-            composable(Routes.SEARCH_SCREEN.name) {
+            composable(Routes.FAVOURITE_SCREEN.name) {
                 FavouriteScreen(navController)
             }
         }
