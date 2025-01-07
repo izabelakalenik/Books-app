@@ -18,3 +18,6 @@ Via Firebase - Google SSO and email
 
 ## Database
 In Firebase - for storing users data
+
+### Device
+I tested this app on Pixel 6 Pro API 35 emulator.
