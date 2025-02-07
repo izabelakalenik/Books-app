@@ -44,6 +44,7 @@ fun WelcomeScreen(navController: NavHostController) {
             WelcomeText()
             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.medium_spacer)))
             StartButton(navController)
+
         }
 
         Box(
